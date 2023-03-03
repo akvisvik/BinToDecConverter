@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #23364e;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 605px;
+    background: #fff;
+    padding: 20px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto';
+    transition: 0.6s ease-out;
+}
+
+.text-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-box input{
+    color: #23364e;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.text-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #23364e;
+    text-transform: capitalize;
+}
+
+.text-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #23364e;
+    background: #dee3e9;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.text-box button:hover{
+    color: #fff;
+    background: #23364e;
+}
+
+.text-box i{
+    position: absolute;
+    color: #23364e;
+    font-size: 28px;
+}
+
+.value-box{
+    text-align: center;
+}
+
+.value-box img{
+    width: 60%;
+    margin-top: 30%;
+}
+
+.value-box .value{
+    position: relative;
+    color: #23364e;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
