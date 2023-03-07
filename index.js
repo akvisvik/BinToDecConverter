@@ -14,6 +14,8 @@ text.addEventListener('click', () =>{
         error.classList.add('fadeIn')
         return;
     }else{
-        container.style.height = '105px'
+        error.style.scale = 0
+        error.style.opacity = 0
+        container.style.height = '100px'
     }
 })
