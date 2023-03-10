@@ -17,5 +17,11 @@ text.addEventListener('click', () =>{
         error.style.scale = 0
         error.style.opacity = 0
         container.style.height = '100px'
+        for(let i=0; i<value.length; i++){
+            if (str[i] == "0" || str[i] == "1") {
+                container.style.height = '410px'
+            }
+        }
     }
 })
+
