@@ -13,14 +13,27 @@ text.addEventListener('click', () =>{
         error.style.opacity = 0
         container.style.height = '100px'
 
+        const binaryValue 0;
         for(let i=0; i<value.length; i++){
             if (value[i] == "0" || value[i] == "1") {
-                
+                if(value[i] == "1"){
+                    if(i=0){
+                        binaryValue = binaryValue + 1;
+                    }else{
+                        const tmp = 1
+                        for(let j=0; j<i; j++){
+                            tmp = tmp * 2;
+                        }
+                        binaryValue += tmp;
+                    }
+                    console.log(binaryValue);
+                }
             }else{
                 triggerError();
                 break;
             }
         }
+        
     }
 })
 
